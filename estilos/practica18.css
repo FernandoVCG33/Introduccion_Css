@@ -24,8 +24,11 @@ body{
     border-radius: 1rem;
 }
 .card__container-img{
-    flex-basis: 40%;
+    width: 40%;
     height: 100%;
+}
+.card__container-img img{
+    width: 100%;
 }
 .card_contenido{
     flex-basis: 60%;
