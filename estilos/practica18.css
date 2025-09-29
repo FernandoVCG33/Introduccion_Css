@@ -1,0 +1,89 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+.layaout{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 112, 166);
+}
+.layaout_card{
+    display: flex;
+    flex-direction: row;
+    max-width: 86rem;
+    height: 30rem;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.card__container-img{
+    flex-basis: 40%;
+    height: 100%;
+}
+.card_contenido{
+    flex-basis: 60%;
+    height: 100%;
+    padding: 3rem  4rem;
+}
+.titulo{
+    font-size: 2rem;
+    line-height: 1.4;
+    color: rgb(97, 97, 220);
+    margin-bottom: 1.5rem;
+}
+.description{
+    font-size: 1.4rem;
+    color: rgb(159, 170, 179);
+    margin-bottom: 2rem;
+}
+.card_usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.usuario_contend{
+    width: 5rem;
+    height: 5rem;
+}
+.us{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.usuario_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+.usuario_name{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: 600;
+}
+.dato{
+    font-size: 1.4rem;
+    color: #929292;
+    font-weight: 400;
+}
+.usuario_icono{
+    background-color: rgb(15, 106, 106);
+    text-align: center;
+    line-height: 4rem; /*Altura de la caja*/
+    color: white;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+}

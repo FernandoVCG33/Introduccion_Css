@@ -1,0 +1,95 @@
+body{
+    background-color: #27296985;
+    font-family: "Nunito Sans", serif;
+}
+table{
+    margin: auto;
+    margin-top: 150px;
+    border: 1 solid black;
+    text-align: center;
+    font-size: 16px;
+    border-collapse: collapse;
+    color: #fff;   
+}
+table th,
+table td {
+    border: 1px solid #dee2e6;
+    padding: 5px 10px; /*5 arriba y abajo 10 a los lados*/
+    background-color: #F4B251;
+}
+table th{
+    background-color: #272969;
+    font-weight: 700;
+    width: 190px;
+}
+table td:nth-child(1){
+    background-color: #272969;
+}
+table td{
+    font-weight: 400;
+}
+table td svg{
+    margin-right: 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+table td svg:nth-child(1){
+    color: #272969;
+}
+table td svg:nth-child(2){
+    color: #272969;
+}
+
+table td:hover{
+    background-color: rgba(244, 178, 81, 0.5);
+}
+table td svg:hover{
+    opacity: 50%;
+}
+/*lista*/
+ul{
+    background-color: #272969;
+    width: 20%;
+    padding: 0;
+    margin: auto;
+    margin-top: 100px;
+}
+ul li{
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 16px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    color: #ffffff;
+    cursor: pointer;
+}
+ul li:hover {
+    background-color: #F4B251;
+}
+/*enlace*/
+a{
+    display: block;
+    text-decoration: none;
+    background-color: #272969;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    width: 15%;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.50);
+    transition: all 0.3s;
+}
+a:hover{
+    padding: 20px 25px ;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #F4B251;
+}

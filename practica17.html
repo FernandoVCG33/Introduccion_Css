@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video de fondo</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.6rem;
+            overflow: hidden;
+
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .layaout{
+            width: 100%;
+
+        }
+        .layaout_video{
+            width: 100%;
+            height: 100%;
+        }
+        .layaout__content{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .content__title{
+            font-size: 10rem;
+            text-shadow: 0 0 1rem purple;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+        .content__btn{
+            text-decoration: none;
+            width: 10rem;
+            color: white;
+            display: block;
+            text-align: center;
+            background-color: aqua;
+            padding:  2rem;
+            border: 2px solid black;
+            border-radius: 45px;
+            margin: 0px auto;
+            transition: all 0.3s ease-out;
+        }
+        .content__btn:hover{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="layaout">
+        <video src="recursos/Videos/bosque 6.mp4" class="layaout_video" autoplay loop >
+        </video>
+        <div class="layaout__content">
+            <h1 class="content__title">Academia</h1>
+            <a href="#" class="content__btn">Ver cursos</a>
+        </div>
+    </div>
+    
+</body>
+</html>
