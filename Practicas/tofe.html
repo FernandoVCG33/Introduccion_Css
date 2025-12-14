@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos de Programación</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font for Code -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        pre {
+            font-family: 'Fira Code', monospace;
+        }
+        /* Custom scrollbar for code block */
+        .code-scroll::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .code-scroll::-webkit-scrollbar-track {
+            background: #1e1e1e;
+        }
+        .code-scroll::-webkit-scrollbar-thumb {
+            background: #4a4a4a;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-black p-8 md:p-12 max-w-4xl mx-auto">
+
+<!-- Section 1: Ingresar CI -->
+<section class="mb-12">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">Ingresar CI:</h1>
+    <div class="relative max-w-md">
+        <input
+                type="text"
+                placeholder="Ingresar CI"
+                class="w-full bg-gray-300 text-gray-800 font-semibold placeholder-gray-700 rounded-lg px-6 py-4 focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all text-lg"
+        >
+    </div>
+</section>
+
+<!-- Section 2: Retos -->
+<section class="mb-8">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Retos</h2>
+    <div class="flex flex-wrap gap-4">
+        <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-3 px-8 rounded-lg transition-colors text-lg shadow-sm">
+            Ver retos
+        </button>
+        <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-3 px-8 rounded-lg transition-colors text-lg shadow-sm">
+            Solución
+        </button>
+    </div>
+</section>
+
+<!-- Code Block Visual -->
+<section class="mt-10">
+    <!-- Window Chrome (fake browser/editor bar) -->
+    <div class="bg-[#1e1e1e] rounded-t-xl p-3 flex items-center justify-between border-b border-gray-700">
+        <div class="text-gray-400 text-sm font-mono ml-2">main.cpp</div>
+        <div class="flex gap-2 mr-2">
+            <span class="w-3 h-3 rounded-full bg-red-500"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+            <span class="w-3 h-3 rounded-full bg-green-500"></span>
+        </div>
+    </div>
+
+    <!-- Code Content -->
+    <div class="bg-[#1e1e1e] p-6 rounded-b-xl overflow-x-auto code-scroll shadow-2xl">
+            <pre class="text-sm md:text-base leading-relaxed">
+<span class="text-[#569cd6]">using</span> <span class="text-[#569cd6]">namespace</span> std;
+
+<span class="text-[#569cd6]">int</span> <span class="text-[#dcdcaa]">main</span>() {
+    <span class="text-[#569cd6]">int</span> choice;
+
+    <span class="text-[#6a9955]">// --- DO-WHILE LOOP ---</span>
+    <span class="text-[#6a9955]">// This loop guarantees the code block runs at least once.</span>
+    <span class="text-[#6a9955]">// It is perfect for menus where you want to show options first.</span>
+    <span class="text-[#c586c0]">do</span> {
+        <span class="text-[#6a9955]">// Display the menu</span>
+        <span class="text-[#4ec9b0]">cout</span> &lt;&lt; <span class="text-[#ce9178]">&quot;\n===============================&quot;</span> &lt;&lt; <span class="text-[#4ec9b0]">endl</span>;
+        <span class="text-[#4ec9b0]">cout</span> &lt;&lt; <span class="text-[#ce9178]">&quot;  C++ LOOPS & LOGIC MENU&quot;</span> &lt;&lt; <span class="text-[#4ec9b0]">endl</span>;
+        <span class="text-[#4ec9b0]">cout</span> &lt;&lt; <span class="text-[#ce9178]">&quot;===============================&quot;</span> &lt;&lt; <span class="text-[#4ec9b0]">endl</span>;
+        <span class="text-[#4ec9b0]">cout</span> &lt;&lt; <span class="text-[#ce9178]">&quot;1. Check if a number is Even or Odd (if/else)&quot;</span> &lt;&lt; <span class="text-[#4ec9b0]">endl</span>;
+        <span class="text-[#4ec9b0]">cout</span> &lt;&lt; <span class="text-[#ce9178]">&quot;2. Count up to a number (for loop)&quot;</span> &lt;&lt; <span class="text-[#4ec9b0]">endl</span>;
+        <span class="text-[#4ec9b0]">cout</span> &lt;&lt; <span class="text-[#ce9178]">&quot;3. Sum numbers until you enter 0 (while loop)&quot;</span> &lt;&lt; <span class="text-[#4ec9b0]">endl</span>;
+        <span class="text-[#4ec9b0]">cout</span> &lt;&lt; <span class="text-[#ce9178]">&quot;4. Exit&quot;</span> &lt;&lt; <span class="text-[#4ec9b0]">endl</span>;
+        <span class="text-[#4ec9b0]">cout</span> &lt;&lt; <span class="text-[#ce9178]">&quot;Enter your choice: &quot;</span>;
+        <span class="text-[#4ec9b0]">cin</span> &gt;&gt; choice;
+            </pre>
+    </div>
+</section>
+
+</body>
+</html>
